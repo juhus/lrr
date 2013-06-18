@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.12'
 gem 'jquery-ui-rails'
 gem 'jquery-rails'
-gem 'mailman'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
