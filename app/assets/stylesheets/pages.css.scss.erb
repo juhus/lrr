@@ -1,0 +1,89 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* @extends */
+	.shadow_light{
+		-webkit-box-shadow: 0px 0px 7px rgba(50, 50, 50, 0.5);
+		-moz-box-shadow:    0px 0px 7px rgba(50, 50, 50, 0.5);
+		box-shadow:         0px 0px 7px rgba(50, 50, 50, 0.5);
+	}
+
+
+html{
+	font-size:16px;
+}
+body{
+	width: 100%;
+	font-size:62.5%;
+    margin:0;
+    padding:0;
+    background:#FAF5EA;
+    overflow:auto;
+}
+
+a {
+    text-decoration :none;
+}
+
+#lrr{
+    width:94.727272727em;
+    background:#fff;
+    margin:0 auto;
+    @extend .shadow_light;
+}
+
+.lrr-header, .lrr-navbar, .lrr-divider, .lrr-flags, .lrr-invite, .lrr-about, .lrr-activities, .lrr-contact {
+    width:100%;
+    background-size:100% 100%;
+}
+
+.lrr-header {
+   height:21.818181818em;
+   background-image:url(<%= asset_path('header.png')%>);
+}
+
+.lrr-navbar {
+   height:4.545454545em;
+   background-image:url(<%= asset_path('navbar.png')%>);
+}
+
+.lrr-divider {
+   height:3.272727273em;
+   background-image:url(<%= asset_path('divider.png')%>);
+}
+
+.lrr-flags {
+   height:3.272727273em;
+   background-image:url(<%= asset_path('flags.png')%>);
+}
+
+.lrr-invite {
+   height:56.181818182em;
+   background-image:url(<%= asset_path('invite.png')%>);
+}
+
+.lrr-activities {
+   height:85.818181818em;
+   background-image:url(<%= asset_path('activities.png')%>);
+}
+
+.lrr-about {
+   height:85.818181818em;
+   background-image:url(<%= asset_path('about.png')%>);
+}
+
+.lrr-contact {
+   height:56.181818182em;
+   background-image:url(<%= asset_path('contact.png')%>);
+}
+
+.menu, .separator {
+    margin:2.2em;
+    height:2.272727273em;
+}
+
+.menu {
+    margin-left:6.5em;
+    margin-right:6.5em;
+}

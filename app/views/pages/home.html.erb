@@ -1,0 +1,33 @@
+<div id="lrr">
+	<div class="lrr-header"></div>
+	<div class="lrr-navbar">
+		
+		<%= link_to (image_tag 'menu_about.png', class:'menu'), '#about' %>
+		<%= image_tag 'menu_separator.png', class:"separator" %>
+		<%= link_to (image_tag 'menu_press.png', class:'menu'), '#press' %>
+		<%= image_tag 'menu_separator.png', class:"separator" %>
+		<%= link_to (image_tag 'menu_contacts.png', class:'menu'), '#contacts' %>
+	</div>
+	<div class="lrr-divider"></div>
+	<div class="lrr-invite"></div>
+	<div class="lrr-divider"></div>
+	<div class="lrr-activities"></div>
+	<div class="lrr-flags"></div>
+	<div class="lrr-about" id="about"></div>
+	<div class="lrr-divider"></div>
+	<div class="lrr-contact" id="contacts"></div>
+</div>
+
+
+<script>
+	$(function() {
+    $('.lrr-navbar a').bind('click',function(event){
+        var $anchor = $(this);
+ 
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1000);
+        event.preventDefault();
+    });
+});
+</script>
