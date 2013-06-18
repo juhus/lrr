@@ -1,7 +1,8 @@
 <div id="lrr">
-	<div class="lrr-header"></div>
+	<div class="lrr-header">
+		<div class="get-involved"><span><a href="https://docs.google.com/forms/d/1-y2iUShOfoSL2yEaXZfFDFe4bUtOq6TmUHTtxOulIIY/viewform" target="_blank">Get involved!</a></span></div>
+	</div>
 	<div class="lrr-navbar">
-		
 		<%= link_to (image_tag 'menu_about.png', class:'menu'), '#about' %>
 		<%= image_tag 'menu_separator.png', class:"separator" %>
 		<%= link_to (image_tag 'menu_press.png', class:'menu'), '#press' %>
@@ -16,10 +17,12 @@
 	<div class="lrr-about" id="about"></div>
 	<div class="lrr-divider"></div>
 	<div class="lrr-contact" id="contacts">
-		<%= link_to (image_tag 'facebook.png', class:'social'), "http://facebook.com/lredrocks", target:"_blank"%>
-		<%= link_to (image_tag 'twitter.png', class:'social'), "http://twitter.com/littleredrocks", target:"_blank"%>
-		<%= link_to (image_tag 'instagram.png', class:'social'), "http://instagram.com/littleredrocks", target:"_blank"%>
-		<span class="email"><a href="mailto:littleredrocks@gmail.com" target="_blank">littleredrocks@gmail.com</a></span>
+		<div class="group">
+			<%= link_to (image_tag 'facebook.png', class:'social'), "http://facebook.com/lredrocks", target:"_blank"%>
+			<%= link_to (image_tag 'twitter.png', class:'social'), "http://twitter.com/littleredrocks", target:"_blank"%>
+			<%= link_to (image_tag 'instagram.png', class:'social'), "http://instagram.com/littleredrocks", target:"_blank"%>
+			<%= link_to (image_tag 'gmail.png', class:'social'), "mailto:littleredrocks@gmail.com", target:"_blank"%>
+		</div>
 	</div>
 </div>
 
