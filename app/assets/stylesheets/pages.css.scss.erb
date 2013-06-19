@@ -20,6 +20,7 @@ body{
     padding:0;
     background:#ddd;
     overflow:auto;
+    position:relative;
 }
 
 a {
@@ -102,7 +103,27 @@ a {
     width:40%;
     margin:0 auto;
     font-family:Courier;
+    color: #555;
     text-align:center;
     font-size:1.545454em;
     padding-top:12em;
+    & a{
+        text-decoration:underline;
+        color:#000;
+    }
+}
+
+.sticky-note{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background: #000;
+    font-size:16px;
+    font-family: Helvetica, Verdana, San-Serif;
+    color:white;
+    padding:0.2em 1.5em 0.2em 1.5em;
+    & a{
+        color: red;
+    }
 }
